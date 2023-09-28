@@ -6,11 +6,9 @@ export function PlayerCardOne (){
  return (
     <>
       <div className={styles.cardContainerP1}>
-      <div className={styles.editButtonOne}>
         <button type='button'>
           <FontAwesomeIcon icon={faPenToSquare}/>
         </button>
-      </div>
         <h3>🦊</h3>
       <div className={styles.cardDetailP1}>
           <p>Username: <strong>PlayerOne</strong> </p>
@@ -27,11 +25,9 @@ export function PlayerCardTwo (){
     return (
        <>
        <div className={styles.cardContainerP2}>
-       <div className={styles.editButtonTwo}>
          <button type='button'>
           <FontAwesomeIcon icon={faPenToSquare}/>
           </button>
-       </div>
           <h3>🦓</h3>
           <div className={styles.cardDetailP2}>
             <p>Username: <strong>PlayerTwo</strong> </p>

@@ -27,7 +27,7 @@
     justify-content: center;
 }
 
-.editButtonOne button{
+.cardContainerP1 button{
     margin-top: 0;
     font-size: 0.65rem;
     color: white;
@@ -69,7 +69,7 @@
     justify-content: center;
 }
 
-.editButtonTwo button{
+.cardContainerP2 button{
     margin-top: 0;
     font-size: 0.65rem;
     color: white;
