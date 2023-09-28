@@ -27,15 +27,6 @@
     justify-content: center;
 }
 
-.cardContainerP1 button{
-    margin-top: 0;
-    font-size: 0.65rem;
-    color: white;
-    background: none;
-    box-shadow: none;
-    width: 0px;
-    height: 0;
-}
 
 .cardContainerP2 {
     margin-right: 20px;
@@ -69,12 +60,3 @@
     justify-content: center;
 }
 
-.cardContainerP2 button{
-    margin-top: 0;
-    font-size: 0.65rem;
-    color: white;
-    background: none;
-    box-shadow: none;
-    width: 0px;
-    height: 0;
-}

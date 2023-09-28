@@ -37,3 +37,23 @@
     padding: 5px;
     margin-top: 15px;
   }
+
+  .cardContainerEditP1 button{
+    margin-top: 0;
+    font-size: 0.65rem;
+    color: white;
+    background: none;
+    box-shadow: none;
+    width: 0px;
+    height: 0;
+}
+
+.cardContainerEditP2 button{
+  margin-top: 0;
+  font-size: 0.65rem;
+  color: white;
+  background: none;
+  box-shadow: none;
+  width: 0px;
+  height: 0;
+}

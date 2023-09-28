@@ -14,9 +14,13 @@ export default function PlayersPage (){
             <title>Player page</title>
         </Head>
         <main className={`${styles.main} ${inter.className}`}>
-            <PlayerCardOne/>
+            <div className={styles.cardContainerEditP1}>
+              <PlayerCardOne/>
+            </div>
             <h2>VS</h2>
-            <PlayerCardTwo/>
+            <div className={styles.cardContainerEditP2}>
+              <PlayerCardTwo/>
+            </div>
             <button>PLAY</button>
             <Link href= "/" className={styles.backButtonLink}>Back</Link>
         </main>
