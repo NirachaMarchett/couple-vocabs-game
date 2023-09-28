@@ -6,6 +6,7 @@ import styles from '@/styles/PlayerPage.module.css'
 import Link from "next/link";
 
 const inter = Inter({ subsets: ['latin'] })
+
 export default function PlayersPage (){
     return (
     <>
