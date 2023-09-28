@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,7 +12,7 @@ export default function Home() {
         <title>Home page</title>
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div >
+        <div>
           <p>
             Welcome to
           </p>
@@ -20,11 +20,7 @@ export default function Home() {
             CoupleLingo
           </h2>
         </div>
-        <div className={styles.styleButton}>
-          <button>
-            Start
-          </button>
-        </div>
+            <Link href="/player" className={styles.customLink}>START</Link>
       </main>
     </>
   )
