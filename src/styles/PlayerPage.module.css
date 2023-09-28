@@ -17,7 +17,7 @@
     width: 150px;
     height: 50px;
     padding: 5px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     background-color: var( --button-background-color);
     border-radius: var(--button-border-radius);
     box-shadow: var(--button-shadow);
@@ -26,21 +26,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 80px;
   }
 
   .backButtonLink {
     color: white;
     text-decoration: none;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     padding: 5px;
-    margin-top: 15px;
+    margin-top: 25px;
   }
 
   .cardContainerEditP1 button{
     margin-top: 0;
-    font-size: 0.65rem;
+    font-size: 1rem;
     color: white;
     background: none;
     box-shadow: none;
@@ -50,7 +50,7 @@
 
 .cardContainerEditP2 button{
   margin-top: 0;
-  font-size: 0.65rem;
+  font-size: 1rem;
   color: white;
   background: none;
   box-shadow: none;
