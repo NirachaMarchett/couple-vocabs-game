@@ -1,6 +1,7 @@
 ## Cuurent new project: PairLingo Game
 
-![Start page](https://github.com/NirachaMarchett/couple-vocabs-game/assets/135506311/0ce2def8-aec6-44fa-ab9b-5d3769abcccd)
+![Start page](https://github.com/NirachaMarchett/couple-vocabs-game/assets/135506311/34fa48a5-fcec-43ac-b988-8e8cdc21a99e)
+
 
 
 ## Deploy on Vercel
