@@ -20,7 +20,9 @@ export default function PlayersPage (){
               <PlayerCardOne/>
             </div>
             <FontAwesomeIcon icon={faBoltLightning} style={{color: "#ffffff", height: '150px', marginTop: '10px', marginBottom: '10px'}} />
-            <FontAwesomeIcon icon={faStar} style={{color: "#ffffff", position: 'absolute', left: '175px', top: '420px', height: '25px'}} />
+            <div style={{position: 'relative'}}>
+            <FontAwesomeIcon icon={faStar} style={{color: "#ffffff", position: 'absolute', left: '-25px', top: '15px', height: '25px', transform: 'translate(-50%, -50%'}} />
+            </div>
             <div className={styles.cardContainerEditP2}>
               <PlayerCardTwo/>
             </div>
