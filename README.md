@@ -6,4 +6,5 @@
 
 
 ## Deploy on Vercel
-[View demo](https://couple-vocabs-game.vercel.app/) (optimized for mobile screen)
+[View demo](https://couple-vocabs-game-k6srmzvod-nirachamarchett-s-team.vercel.app/) (optimized for mobile screen)
+
