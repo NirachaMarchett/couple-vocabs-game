@@ -3,7 +3,8 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
-import GameIcon from '../../public/assets/game-icon.png';
+import Image from 'next/image';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +23,7 @@ export default function Home() {
             PairLingo
           </h2>
         </div>
-        <img src={GameIcon} alt='Home screen image' style={{ width: '200px', height: '200px', marginTop: '100px' }}/>
+        <Image src="/assets/game-icon.png" alt='Home screen image' width={400} height={240} style={{ marginTop: '100px' }}/>
             <Link href="/player" className={styles.customLink}>START</Link>
       </main>
     </>

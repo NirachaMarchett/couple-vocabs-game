@@ -9,7 +9,7 @@ export function PlayerCardOne (){
         <button type='button'>
           <FontAwesomeIcon icon={faPenToSquare}/>
         </button>
-        <h3>🦊</h3>
+        <span>🦊</span>
       <div className={styles.cardDetailP1}>
           <p>Username: <strong>PlayerOne</strong> </p>
           <p>Practice language: <strong>DE</strong></p>
@@ -28,7 +28,7 @@ export function PlayerCardTwo (){
          <button type='button'>
           <FontAwesomeIcon icon={faPenToSquare}/>
           </button>
-          <h3>🦓</h3>
+          <span>🦓</span>
           <div className={styles.cardDetailP2}>
             <p>Username: <strong>PlayerTwo</strong> </p>
             <p>Practice language: <strong>TH</strong></p>
