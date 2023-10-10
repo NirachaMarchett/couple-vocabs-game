@@ -9,27 +9,43 @@ import { faBoltLightning, faStar, faArrowLeft  } from "@fortawesome/free-solid-s
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function PlayersPage (){
+export default function PlayersPage ({onEdit, openModal, closeModal, playerOneData, playerTwoData, formData, handleInputChange, handleFormSubmit}){
     return (
     <>
         <Head>
             <title>Player page</title>
         </Head>
         <main className={`${styles.main} ${inter.className}`}>
-            <div className={styles.cardContainerEditP1}>
-              <PlayerCardOne/>
-            </div>
-            <FontAwesomeIcon icon={faBoltLightning} style={{color: "#ffffff", height: '150px', marginTop: '10px', marginBottom: '10px'}} />
-            <div style={{position: 'relative'}}>
-            <FontAwesomeIcon icon={faStar} style={{color: "#ffffff", position: 'absolute', left: '-25px', top: '15px', height: '25px', transform: 'translate(-50%, -50%'}} />
-            </div>
-            <div className={styles.cardContainerEditP2}>
-              <PlayerCardTwo/>
-            </div>
-            <button>PLAY</button>
-            <Link href= "/" className={styles.backButtonLink}>
-              <FontAwesomeIcon icon={faArrowLeft} style={{color: "#ffffff", marginRight: '5px'}}/> Back
-            </Link>
+          <div className={styles.cardContainerEditP1}>
+            <PlayerCardOne 
+            onEdit={onEdit} 
+            openModal={openModal} 
+            closeModal={closeModal} 
+            playerOneData={playerOneData}
+            formData={formData}
+            handleInputChange={handleInputChange}
+            handleFormSubmit={handleFormSubmit}
+            />
+          </div>
+          <FontAwesomeIcon icon={faBoltLightning} style={{color: "#ffffff", height: '150px', marginTop: '10px', marginBottom: '10px'}} />
+          <div style={{position: 'relative'}}>
+          <FontAwesomeIcon icon={faStar} style={{color: "#ffffff", position: 'absolute', left: '-25px', top: '15px', height: '25px', transform: 'translate(-50%, -50%'}} />
+          </div>
+          <div className={styles.cardContainerEditP2}>
+            <PlayerCardTwo 
+              onEdit={onEdit}
+              openModal={openModal}
+              closeModal={closeModal}
+              playerTwoData={playerTwoData}
+              formData={formData}
+              handleInputChange={handleInputChange}
+              handleFormSubmit={handleFormSubmit}
+            />
+          </div>
+          <button>PLAY</button>
+          <Link href= "/" className={styles.backButtonLink}>
+            <FontAwesomeIcon icon={faArrowLeft} style={{color: "#ffffff", marginRight: '5px'}}/> Back
+          </Link>
         </main>
     </>
     )
