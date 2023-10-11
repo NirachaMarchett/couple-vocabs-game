@@ -27,7 +27,7 @@ export default function PlayersPage ({
         <main className={`${styles.main} ${inter.className}`}>
           <div className={styles.cardContainerEditP1}>
             <PlayerCardOne
-              onEdit={() => onEdit("1")} 
+              onEdit={() => onEdit("1", playerOneData.avatar)} 
               playerOneData={playerOneData}
               formData={formData}
               openModal={openModal} 
@@ -43,7 +43,7 @@ export default function PlayersPage ({
           <div className={styles.cardContainerEditP2}>
           <div className={styles.cardContainerP2}>
             <PlayerCardTwo
-              onEdit={() => onEdit("2")}
+              onEdit={() => onEdit("2", playerTwoData.avatar)}
               playerTwoData={playerTwoData}
               formData={formData}
               openModal={openModal}

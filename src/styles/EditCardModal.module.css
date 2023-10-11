@@ -3,13 +3,17 @@
     color: black;
     border-radius: 25px;
     width: 380px;
-    height: 370px;
+    height: 500px;
     position: absolute;
     top: 150%;
     left: 46%;
     transform: translate(-50%, -50%);
     padding: 1rem;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .detailSection {
@@ -20,16 +24,27 @@
     align-items: center;
 }
 
-.detailSection span {
+.avatar span {
+    margin: 0;
+    position: absolute;
+    top: -50px;
+    left: 125px;
+    background-color: none;
     width: 120px;
-    height: 120px;
+    height: 100px;
 }
+
+.avatarOptions {
+    padding: 35px;
+}
+
+
 
 .detailSection label {
     font-size: 1rem;
     padding: 0.6rem;
     padding-bottom: 0;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .detailSection input {
@@ -66,4 +81,3 @@
     justify-content: center;
     align-items: center;
 }
-
