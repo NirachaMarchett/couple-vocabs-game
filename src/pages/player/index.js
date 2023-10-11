@@ -9,7 +9,16 @@ import { faBoltLightning, faStar, faArrowLeft  } from "@fortawesome/free-solid-s
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function PlayersPage ({onEdit, openModal, closeModal, playerOneData, playerTwoData, formData, handleInputChange, handleFormSubmit}){
+export default function PlayersPage ({
+  onEdit, 
+  openModal, 
+  closeModal, 
+  playerOneData, 
+  playerTwoData, 
+  formData, 
+  handleInputChange, 
+  handleFormSubmit
+}){
     return (
     <>
         <Head>
@@ -17,14 +26,14 @@ export default function PlayersPage ({onEdit, openModal, closeModal, playerOneDa
         </Head>
         <main className={`${styles.main} ${inter.className}`}>
           <div className={styles.cardContainerEditP1}>
-            <PlayerCardOne 
-            onEdit={onEdit} 
-            openModal={openModal} 
-            closeModal={closeModal} 
-            playerOneData={playerOneData}
-            formData={formData}
-            handleInputChange={handleInputChange}
-            handleFormSubmit={handleFormSubmit}
+            <PlayerCardOne
+              onEdit={() => onEdit("1")} 
+              playerOneData={playerOneData}
+              formData={formData}
+              openModal={openModal} 
+              closeModal={closeModal} 
+              handleInputChange={handleInputChange}
+              handleFormSubmit={handleFormSubmit}
             />
           </div>
           <FontAwesomeIcon icon={faBoltLightning} style={{color: "#ffffff", height: '150px', marginTop: '10px', marginBottom: '10px'}} />
@@ -32,15 +41,17 @@ export default function PlayersPage ({onEdit, openModal, closeModal, playerOneDa
           <FontAwesomeIcon icon={faStar} style={{color: "#ffffff", position: 'absolute', left: '-25px', top: '15px', height: '25px', transform: 'translate(-50%, -50%'}} />
           </div>
           <div className={styles.cardContainerEditP2}>
-            <PlayerCardTwo 
-              onEdit={onEdit}
-              openModal={openModal}
-              closeModal={closeModal}
+          <div className={styles.cardContainerP2}>
+            <PlayerCardTwo
+              onEdit={() => onEdit("2")}
               playerTwoData={playerTwoData}
               formData={formData}
+              openModal={openModal}
+              closeModal={closeModal}
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
             />
+            </div>
           </div>
           <button>PLAY</button>
           <Link href= "/" className={styles.backButtonLink}>

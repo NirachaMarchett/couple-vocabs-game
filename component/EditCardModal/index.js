@@ -3,7 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 
-export default function EditCardModal ({closeModal, formData, handleInputChange, handleFormSubmit}) {
+export default function EditCardModal ({
+    closeModal, 
+    formData,
+    handleInputChange, 
+    handleFormSubmit
+}) {
     return (
         <>
         <div>
@@ -13,10 +18,10 @@ export default function EditCardModal ({closeModal, formData, handleInputChange,
                     style={{color: "red", height: '40px', marginTop: '10px', marginBottom: '10px', position: 'absolute', right: '0px', top: '-20px'}}/>
                 </button>
                 <div className={styles.detailSection}>
-                    <span className={styles.span}>🦊</span>
+                    <span className={styles.span}>{formData.id === "1" ? '🦊' : '🦓'}</span>
                     <label htmlFor="avatar"> Username:</label>
                     <input 
-                        id="username" 
+                        id="usernamePlayer" 
                         type="text" 
                         name="username"
                         value={formData.username}
@@ -26,7 +31,7 @@ export default function EditCardModal ({closeModal, formData, handleInputChange,
                     <label htmlFor="language">Practice language:</label>
                     <select 
                         name="language" 
-                        id="language"
+                        id="languagePlayer"
                         value={formData.language}
                         onChange={handleInputChange}
                         >
@@ -43,3 +48,4 @@ export default function EditCardModal ({closeModal, formData, handleInputChange,
         </>
     )
 }
+
