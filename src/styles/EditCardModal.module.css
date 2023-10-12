@@ -31,10 +31,14 @@
     position: absolute;
     top: -50px;
     left: 125px;
-    background-color: none;
     width: auto;
     height: auto;
     max-width: 100%;
+}
+
+.avatar span img{
+    width: 130px;
+    height: 120px;
 }
 
 .avatarOptions {

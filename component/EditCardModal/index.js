@@ -40,7 +40,7 @@ return (
                 
         <div className={styles.avatar}>
           <span>
-            <img src={formData.avatar} alt="Avatar" width={130} height={120} />
+            <img src={formData.avatar} alt="Avatar"/>
           </span>
 
           <div className={styles.avatarOptions}>
