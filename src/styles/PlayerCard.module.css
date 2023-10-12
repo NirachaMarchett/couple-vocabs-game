@@ -32,7 +32,7 @@
 .cardContainerP1 span {
     margin-top: 10px;
     background-color: white;
-    border: solid 5px #BC63C7;
+    border: solid 5px #ffffff;
     border-radius: 100px;
     height: auto;
     width: auto;
@@ -65,8 +65,7 @@
 .cardContainerP2 span {
     background-color: white;
     border-radius: 100px;
-    border: solid 5px #ACAEF8;
-    position: relative;
+    border: solid 5px #ffffff;
     height: auto;
     width: auto;
     max-width: 100%;
