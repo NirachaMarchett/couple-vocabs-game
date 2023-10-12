@@ -3,44 +3,65 @@ import React from 'react';
 import { useState } from "react";
 
 export default function App({ Component, pageProps }) {
-  const [openModal, setOpenModal] = useState(false);
+  const [openModalPlayer1, setOpenModalPlayer1] = useState(false);
+  const [openModalPlayer2, setOpenModalPlayer2] = useState(false);
   const [editedPlayer, setEditedPlayer] = useState(null);
+  const [editedPlayerId, setEditedPlayerId] = useState(null);
 
   const [playerOneData, setPlayerOneData] = useState({
     username: "PlayerOne",
-    language: "DE",
+    language: "German",
     id: "1",
     avatar: "/avatar/colabear_avatar.png",
   });
 
   const [playerTwoData, setPlayerTwoData] = useState({
     username: "PlayerTwo",
-    language: "TH",
+    language: "Thai",
     id: "2",
     avatar: "/avatar/penguin_avatar.png",
   });
 
   const handleOpenModal = (id) => {
-    setEditedPlayer(id === "1" ? playerOneData : playerTwoData); 
-    setOpenModal(true);
+    if (id === "1") {
+      setEditedPlayer(playerOneData);
+      setEditedPlayerId(id);
+      setOpenModalPlayer1(true);
+    } else if (id === "2") {
+      setEditedPlayer(playerTwoData);
+      setEditedPlayerId(id);
+      setOpenModalPlayer2(true);
+    }
+    // setEditedPlayer(id === "1" ? playerOneData : playerTwoData); 
+    // setEditedPlayerId(id);
+    // setOpenModal(true);
   };
 
   const handleCloseModal = () => {
-    setOpenModal(false);
+    setOpenModalPlayer1(false);
+    setOpenModalPlayer2(false);
   };
 
   const handleInputChange = (event) => {
+    const { name, value, type } = event.target;
+    if (type === "checkbox") {
+      setEditedPlayer((prevPlayer) => ({
+        ...prevPlayer,
+        [name]: value,
+      }));
+    } else {
     const { name, value } = event.target; 
     setEditedPlayer((prevPlayer) => ({
       ...prevPlayer,
       [name]: value,
     }));
+  }
   };
 
   const handleFormSubmit = () => {
-    if (editedPlayer.id === "1") {
+    if (editedPlayerId === "1") {
       setPlayerOneData(editedPlayer);
-    } else if (editedPlayer.id === "2") {
+    } else if (editedPlayerId === "2") {
       setPlayerTwoData(editedPlayer);
     }
     handleCloseModal();
@@ -53,7 +74,8 @@ export default function App({ Component, pageProps }) {
      <Component 
        {...pageProps}
        onEdit={handleOpenModal}
-       openModal={openModal}
+       openModalPlayer1={openModalPlayer1}
+       openModalPlayer2={openModalPlayer2}
        closeModal={handleCloseModal}
        playerOneData={playerOneData}
        playerTwoData={playerTwoData}

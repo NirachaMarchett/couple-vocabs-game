@@ -11,7 +11,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function PlayersPage ({
   onEdit, 
-  openModal, 
+  openModalPlayer1, 
+  openModalPlayer2,
   closeModal, 
   playerOneData, 
   playerTwoData, 
@@ -30,30 +31,49 @@ export default function PlayersPage ({
               onEdit={() => onEdit("1", playerOneData.avatar)} 
               playerOneData={playerOneData}
               formData={formData}
-              openModal={openModal} 
+              openModalPlayer1={openModalPlayer1} 
               closeModal={closeModal} 
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
             />
           </div>
-          <FontAwesomeIcon icon={faBoltLightning} style={{color: "#ffffff", height: '150px', marginTop: '10px', marginBottom: '10px'}} />
+
+          <FontAwesomeIcon icon={faBoltLightning} 
+            style={{
+              color: "#ffffff", 
+              height: '150px', 
+              marginTop: '10px', 
+              marginBottom: '10px'
+              }} />
+
           <div style={{position: 'relative'}}>
-          <FontAwesomeIcon icon={faStar} style={{color: "#ffffff", position: 'absolute', left: '-25px', top: '15px', height: '25px', transform: 'translate(-50%, -50%'}} />
+            <FontAwesomeIcon icon={faStar} 
+              style={{
+                color: "#ffffff", 
+                position: 'absolute', 
+                left: '-25px', 
+                top: '15px', 
+                height: '25px', 
+                transform: 'translate(-50%, -50%'}} />
           </div>
+
           <div className={styles.cardContainerEditP2}>
+
           <div className={styles.cardContainerP2}>
             <PlayerCardTwo
               onEdit={() => onEdit("2", playerTwoData.avatar)}
               playerTwoData={playerTwoData}
               formData={formData}
-              openModal={openModal}
+              openModalPlayer2={openModalPlayer2}
               closeModal={closeModal}
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
             />
             </div>
           </div>
+
           <button>PLAY</button>
+
           <Link href= "/" className={styles.backButtonLink}>
             <FontAwesomeIcon icon={faArrowLeft} style={{color: "#ffffff", marginRight: '5px'}}/> Back
           </Link>

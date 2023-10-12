@@ -4,9 +4,9 @@
     border-radius: 25px;
     width: 380px;
     height: 500px;
-    position: absolute;
-    top: 150%;
-    left: 46%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
     z-index: 10;
@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    letter-spacing: 0.1rem;
 }
 
 .detailSection {
@@ -25,35 +26,66 @@
 }
 
 .avatar span {
+    border: none;
     margin: 0;
     position: absolute;
     top: -50px;
     left: 125px;
     background-color: none;
-    width: 120px;
-    height: 100px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }
 
 .avatarOptions {
-    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px; 
+    gap: 10px;
 }
 
+/* .avatarOptions label {
+    width: calc(25% - 10px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+} */
 
+.avatarOptions label input {
+    display: none; 
+}
+
+.avatarOptions label img {
+    width: 55px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border 0.1s;
+}
+
+.avatarOptions label img:hover {
+    border: 5px solid #828EEE; 
+}
 
 .detailSection label {
     font-size: 1rem;
     padding: 0.6rem;
     padding-bottom: 0;
-    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .detailSection input {
     padding: 0.2rem;
     width: 200px;
     height: 30px;
-    border: solid 2px grey;
+    border: solid 2px #4F4E4E;
     border-radius: 5px;
     font-size: 1rem;
+    color: #000000;
+    letter-spacing: 0.1rem;
 }
 
 .detailSection select {
@@ -61,23 +93,31 @@
     width: 200px;
     height: 30px;
     font-size: 0.8rem;
-    border: solid 2px grey;
+    border: solid 2px #4F4E4E;
     border-radius: 5px;
     background: none;
     padding: 0.2rem;
+    color: #ffffff;
+    background-color: #434444;
+    letter-spacing: 0.1rem;
 }
 
 .button {
-    width: 85px;
+    width: 90px;
     height: 45px;
     margin-top: 30px;
-    background-color: black;
-    border-radius: 25px;
+    background-color: #828EEE;
+    border-radius: var(--button-border-radius);
+    box-shadow: var(--button-shadow);
     text-align: center;
     padding: 0.5rem;
     font-size: 1rem;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.button:hover {
+    background-color: #888888; 
+    cursor: pointer;
 }

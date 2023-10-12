@@ -16,13 +16,27 @@
     margin-top: 10px;
 }
 
+.username1 p {
+    background: linear-gradient(to right, #f6d365 0%, #fda085 1%, #f6d365 100%);
+    width: 100px;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 25px;
+    position: absolute;
+    top: 65%;
+    left: 3%;
+    color: black;
+    letter-spacing: 0.1rem;
+}
+
 .cardContainerP1 span {
     margin-top: 10px;
     background-color: white;
-    border: none;
+    border: solid 5px #BC63C7;
     border-radius: 100px;
     height: auto;
-    width: 100px;
+    width: auto;
+    max-width: 100%;
     font-size: 4rem;
     display: flex;
     align-items: center;
@@ -40,29 +54,39 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
-
 }
 
 .cardDetailP2 {
     font-size: 0.9rem;
-    margin-top: 15px;
-
+    margin-top: 10px;
 }
+
 
 .cardContainerP2 span {
     background-color: white;
-    border: none;
     border-radius: 100px;
+    border: solid 5px #ACAEF8;
     position: relative;
     height: auto;
-    width: 100px;
+    width: auto;
+    max-width: 100%;
     font-size: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
-    
+    margin-top: 10px; 
+}
+
+.username2 p {
+    position: absolute;
+    top: 559px;
+    background: linear-gradient(to right, #84fab0 0%, #8fd3f4 99%, #84fab0 100%);
+    width: 100px;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 25px;
+    color: black;
+    letter-spacing: 0.1rem;
 }
 
 .backDrop {
