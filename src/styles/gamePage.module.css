@@ -50,13 +50,13 @@
 
 .flashCard {
     position: fixed;
-    top: 50%;
+    top: 49%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #1C7388;
     width: 100%;
-    max-width: 360px;
-    height: 200px;
+    max-width: 320px;
+    height: 180px;
     padding: 1rem;
     margin: 15px 15px 15px 15px;
     display: flex;
@@ -74,7 +74,7 @@
 }
 
 .flashCard p {
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 
