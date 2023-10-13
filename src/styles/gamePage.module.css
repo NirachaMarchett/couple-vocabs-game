@@ -50,7 +50,7 @@
 
 .flashCard {
     position: fixed;
-    top: 49%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #1C7388;
@@ -121,7 +121,7 @@
 
 .playerStatTwo {
     position: fixed;
-    top: 0%;
+    top: -1%;
     left: 50%;
     transform: translateX(-50%);
     background-color: none;
