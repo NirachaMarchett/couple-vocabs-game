@@ -45,7 +45,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10px; 
     gap: 10px;
 }
 
@@ -119,6 +118,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    position: relative; 
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 
 .button:hover {

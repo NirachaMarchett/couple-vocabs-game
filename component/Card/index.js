@@ -1,4 +1,4 @@
-import styles from '@/styles/PlayerCard.module.css'
+import styles from '@/styles/PlayerCard.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import EditCardModal from "../EditCardModal";

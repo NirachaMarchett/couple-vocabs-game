@@ -1,8 +1,8 @@
 import React from "react";
 import { PlayerCardOne, PlayerCardTwo } from "../../../component/Card";
 import Head from "next/head";
-import { Inter } from 'next/font/google'
-import styles from '@/styles/PlayerPage.module.css'
+import { Inter } from 'next/font/google';
+import styles from '@/styles/PlayerPage.module.css';
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBoltLightning, faStar, faArrowLeft  } from "@fortawesome/free-solid-svg-icons";
@@ -28,7 +28,7 @@ export default function PlayersPage ({
         <main className={`${styles.main} ${inter.className}`}>
           <div className={styles.cardContainerEditP1}>
             <PlayerCardOne
-              onEdit={() => onEdit("1", playerOneData.avatar)} 
+              onEdit={() => onEdit("1")} 
               playerOneData={playerOneData}
               formData={formData}
               openModalPlayer1={openModalPlayer1} 
@@ -61,7 +61,7 @@ export default function PlayersPage ({
 
           <div className={styles.cardContainerP2}>
             <PlayerCardTwo
-              onEdit={() => onEdit("2", playerTwoData.avatar)}
+              onEdit={() => onEdit("2")}
               playerTwoData={playerTwoData}
               formData={formData}
               openModalPlayer2={openModalPlayer2}
@@ -72,8 +72,7 @@ export default function PlayersPage ({
             </div>
           </div>
 
-          <button>PLAY</button>
-
+          <Link href="/game" className={styles.gamePageLink}>PLAY</Link>
           <Link href= "/" className={styles.backButtonLink}>
             <FontAwesomeIcon icon={faArrowLeft} style={{color: "#ffffff", marginRight: '5px'}}/> Back
           </Link>

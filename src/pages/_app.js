@@ -1,4 +1,4 @@
-import '@/styles/globals.css'
+import '@/styles/globals.css';
 import React from 'react';
 import { useState } from "react";
 
@@ -32,9 +32,6 @@ export default function App({ Component, pageProps }) {
       setEditedPlayerId(id);
       setOpenModalPlayer2(true);
     }
-    // setEditedPlayer(id === "1" ? playerOneData : playerTwoData); 
-    // setEditedPlayerId(id);
-    // setOpenModal(true);
   };
 
   const handleCloseModal = () => {
@@ -51,12 +48,19 @@ export default function App({ Component, pageProps }) {
       }));
     } else {
     const { name, value } = event.target; 
-    setEditedPlayer((prevPlayer) => ({
-      ...prevPlayer,
+
+    //update only selected language is not the same, to prevent player selecting the same learning language
+    if (
+      (editedPlayerId === "1" && value !== playerTwoData.language) ||
+      (editedPlayerId === "2" && value !== playerOneData.language)
+    ) {
+      setEditedPlayer((prevPlayer) => ({
+        ...prevPlayer,
       [name]: value,
-    }));
+      }));
+    }
   }
-  };
+};
 
   const handleFormSubmit = () => {
     if (editedPlayerId === "1") {

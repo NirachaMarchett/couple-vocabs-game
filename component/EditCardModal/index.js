@@ -1,5 +1,5 @@
-import styles from '@/styles/EditCardModal.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styles from '@/styles/EditCardModal.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 

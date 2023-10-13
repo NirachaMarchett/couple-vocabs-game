@@ -13,7 +13,7 @@
 
 .cardDetailP1 {
     font-size: 0.9rem;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .username1 p {
@@ -78,7 +78,7 @@
 
 .username2 p {
     position: absolute;
-    top: 559px;
+    top: 580px;
     background: linear-gradient(to right, #84fab0 0%, #8fd3f4 99%, #84fab0 100%);
     width: 100px;
     text-align: center;

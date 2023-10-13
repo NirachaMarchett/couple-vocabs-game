@@ -1,0 +1,72 @@
+.answerCardsSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent; 
+    padding: 1rem;
+    border: none;
+    width: 100%;
+    max-width: 350px;
+    z-index: 1;
+    color: #000000;
+}
+
+.answerCardsSection button {
+    background-color: #ffffff;
+    height: 70px;
+    width: 200px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.answerCardsSection button:hover {
+    border: 5px solid #828EEE; 
+}
+
+.answerCardsSectionTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent; 
+    padding: 1rem;
+    border: none;
+    width: 100%;
+    max-width: 350px;
+    z-index: 1;
+    color: #000000;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.answerCardsSectionTwo button {
+    background-color: #ffffff;
+    height: 70px;
+    width: 200px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.answerCardsSectionTwo button:hover {
+    border: 5px solid #828EEE; 
+}

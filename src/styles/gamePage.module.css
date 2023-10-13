@@ -1,0 +1,163 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+    background-color: #EAE7AB;
+    color: #ffffff;
+  }
+
+  .playerStatOne {
+    position: fixed;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    padding: 1rem;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%; 
+    max-width: 450px; 
+    z-index: 1; 
+  }
+
+  .playerOneLives {
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.playerOneAvatar {
+    margin-bottom: 20px;
+}
+
+.playerOneAvatar p {
+    background: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+    width: 120px;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 25px;
+    position: absolute;
+    top: 65%;
+    right: 3%;
+    color: black;
+    letter-spacing: 0.1rem;
+}
+
+.flashCard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1C7388;
+    width: 100%;
+    max-width: 360px;
+    height: 200px;
+    padding: 1rem;
+    margin: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    border: inset 15px #ffffff;
+}
+
+.flashCard hr {
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.flashCard p {
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.englishVocabOne {
+    transform: rotate(180deg);
+}
+
+.restartButton button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    font-size: 0.8rem;
+    color: #000000;
+    background-color: #D6A3DC;
+    position: absolute;
+    top: 75%;
+    left: -5%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.1rem;
+    box-shadow: var(--button-shadow);
+}
+
+.finishButton {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: none;
+    font-size: 0.8rem;
+    color: #000000;
+    background-color: #cecbd6;
+    position: absolute;
+    top: 30%;
+    left: -5%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.1rem;
+    box-shadow: var(--button-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.playerStatTwo {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: none;
+    padding: 1rem;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%; 
+    max-width: 450px; 
+    z-index: 1; 
+    transform: translateX(-50%) rotate(180deg);
+  }
+
+  .playerTwoLives {
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.playerTwoAvatar {
+    margin-bottom: 20px;
+}
+
+.playerTwoAvatar p {
+    background: linear-gradient(to right, #84fab0 0%, #8fd3f4 100%);
+    width: 120px;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 25px;
+    position: absolute;
+    top: 65%;
+    right: 3%;
+    color: black;
+    letter-spacing: 0.1rem;
+}
+
+
